@@ -1,0 +1,83 @@
+/*----------Обнуленя--------*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:16px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*----------BODY--------*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+}
+/*----------PAGE--------*/
+.page {
+    flex: 1 1 auto;
+}
+/*------------------*/
+[class*="__container"] {
+    max-width: 1264px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0px 15px;
+}
+/*----------WRAPPER--------*/
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/*----------HEADER--------*/
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+h1 {
+    color: grey;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.page {
+    background-color: #252121;
+}
+.page__container {
+    padding-top: 150px;
+    text-align: center;
+}
+input {
+    display: flex;
+    margin: 0 auto;
+    min-width: 500px;
+    margin-bottom: 25px;
+    padding: 8px 10px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+button {
+    background-color: gold;
+    padding: 12px 50px;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    text-decoration: underline;
+    border-radius: 20px;
+}
