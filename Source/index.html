@@ -10,17 +10,19 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header"></header>
         <main class="page">
             <div class="page__container">
-                <h1>REST API</h1>
+                <h1 class="page__title">REST API</h1>
                 <div class="page__body">
-                    <input type="text" placeholder="text" id="input" class="input">
-                    <button id="button">Go</button>
+                    <input type="text" placeholder="name" id="input" class="page__input">
+                    <button class="page__button button" id="button">Go</button>
+                </div>
+                <h3 class="page__sub-title">Users</h3>
+                <button type="button" class="page__button-users button" id="usersBtn">Show all users</button>
+                <div class="page__cards">
                 </div>
             </div>
         </main>
-        <footer class="footer"></footer>
     </div>
     <script src="js/script.js"></script>
 </body>

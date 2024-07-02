@@ -39,21 +39,19 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*----------HEADER--------*/
-.header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
+/*--------------BUTTON------------*/
+.button {
+    background-color: gold;
+    padding: 12px 50px;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: all 0.3s ease 0s;
 }
-h1 {
-    color: grey;
-    font-size: 42px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px;
+.button:hover {
+    border-radius: 15px;
+    transform: translate(0, -5px);
 }
+/*--------------PAGE------------*/
 .page {
     background-color: #252121;
 }
@@ -61,23 +59,78 @@ h1 {
     padding-top: 150px;
     text-align: center;
 }
-input {
+.page__title {
+    color: grey;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+.page__title:not(:last-child) {
+    margin-bottom: 30px;
+}
+.page__body:not(:last-child) {
+    margin-bottom: 50px;
+}
+.page__input {
     display: flex;
     margin: 0 auto;
     min-width: 500px;
-    margin-bottom: 25px;
     padding: 8px 10px;
     font-size: 24px;
     border-radius: 5px;
 }
-button {
-    background-color: gold;
-    padding: 12px 50px;
-    border-radius: 5px;
-    font-size: 24px;
-    transition: all 0.3s ease 0s;
+.page__input:not(:last-child) {
+    margin-bottom: 25px;
 }
-button:hover {
+.page__button {  
+}
+.page__sub-title {
+    color: grey;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.page__sub-title:not(:last-child) {
+    margin-bottom: 10px;
+}
+.page__button-users {
+    font-size: 18px;
+    padding: 10px 40px;
+}
+.page__button-users:not(:last-child) {
+    margin-bottom: 30px;
+}
+.page__cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+.page__card {
+    background-color: #595252;
+    padding: 30px 10px;
+}
+.card-page__image {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.card-page__image:not(:last-child) {
+    margin-bottom: 30px;
+}
+.card-page__body {
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.card-page__name {
+    font-size: 26px;
+}
+.card-page__link a {
+    color: inherit;
     text-decoration: underline;
-    border-radius: 20px;
 }
